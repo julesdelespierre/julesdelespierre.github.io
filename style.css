@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik&display=swap');
+
+:root{
+    --principal-color: #7384DE;
+}
+
 h1{
     font-family: 'Rubik', sans-serif;
 }
@@ -8,14 +13,24 @@ h3{
 }
 
 header{
-    background-color: lightblue;
+    background-color: var(--principal-color);
     height: 60px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-header>a{
+header div{
     justify-content: center;
+    align-items: center;
+}
+
+header a{
     font-family: 'Rubik', sans-serif;
     text-decoration: none;
     color: black;
     vertical-align: middle;
+}
+
+a:hover{
+    text-transform: uppercase;
 }
