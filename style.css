@@ -2,6 +2,7 @@
 
 :root{
     --principal-color: #7384DE;
+    --hover-color: #393A40;
 }
 
 h1{
@@ -20,6 +21,7 @@ header{
 }
 
 header div{
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -32,5 +34,6 @@ header a{
 }
 
 a:hover{
-    text-transform: uppercase;
+    text-decoration: underline;
+    color: var(--hover-color);
 }
