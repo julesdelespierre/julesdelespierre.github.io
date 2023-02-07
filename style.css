@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik&display=swap');
+h1{
+    font-family: 'Rubik', sans-serif;
+}
+
+h3{
+    font-family: 'Quicksand', sans-serif;
+}
+
+header{
+    background-color: lightblue;
+    height: 60px;
+}
+
+header>a{
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    color: black;
+    vertical-align: middle;
+}
