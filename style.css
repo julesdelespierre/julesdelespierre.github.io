@@ -5,6 +5,14 @@
     --hover-color: #393A40;
 }
 
+div div{
+    margin-right: 65%;
+}
+
+div :nth-child(2n){
+    margin-left: 65%;
+}
+
 h1{
     font-family: 'Rubik', sans-serif;
 }
