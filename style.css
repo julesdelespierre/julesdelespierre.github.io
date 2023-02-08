@@ -3,18 +3,26 @@
 :root{
     --principal-color: #7384DE;
     --hover-color: #393A40;
+    --fond-texte: #dcdcdc;
 }
 
-div div{
+div div {
+    background: var(--fond-texte);
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+div.gauche{
     margin-right: 65%;
 }
 
-div :nth-child(2n){
+div.droite{
     margin-left: 65%;
 }
 
 h1{
     font-family: 'Rubik', sans-serif;
+    text-align: center;
 }
 
 h3{
