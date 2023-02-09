@@ -6,20 +6,6 @@
     --fond-texte: #dcdcdc;
 }
 
-div div {
-    background: var(--fond-texte);
-    border-radius: 5px;
-    font-family: 'Quicksand', sans-serif;
-}
-
-div.gauche{
-    margin-right: 65%;
-}
-
-div.droite{
-    margin-left: 65%;
-}
-
 h1{
     font-family: 'Rubik', sans-serif;
     text-align: center;
@@ -30,6 +16,7 @@ h3{
 }
 
 header{
+    border-radius: 5px;
     background-color: var(--principal-color);
     height: 60px;
     display: flex;
@@ -52,4 +39,43 @@ header a{
 a:hover{
     text-decoration: underline;
     color: var(--hover-color);
+}
+
+div#pres div {
+    background: var(--fond-texte);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+div.gauche{
+    margin-right: 65%;
+}
+
+div.droite{
+    margin-left: 65%;
+}
+
+div#scol div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 5px;
+    background: var(--fond-texte);
+}
+
+p.titre{
+    margin: 2%;
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+p.date{
+    margin: 2%;
+    font-size: 18px;
 }
