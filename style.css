@@ -5,10 +5,10 @@
     body{
         background-color: #202124;
     }
-    div#pres div, div#scol div, div#comp div{
+    div div{
         background: #303134;
     }
-    h1, h2,  h3, p{
+    h1, h2,  h3, p, div#cont a{
         color: white;
         opacity: 85%;
     }
@@ -16,11 +16,21 @@
     div#comp div.c div.graph{
         background-color: var(--fond-texte);
     }
+
+    a:hover{
+        color: black;
+        background-color: var(--fond-texte);
+    }
 }
 
 @media (prefers-color-scheme: light){
-    div#pres div, div#scol div, div#comp div{
+    div div{
         background: var(--fond-texte);
+    }
+
+    a:hover{
+        color: white;
+        background-color: var(--hover-color);
     }
 
     div#comp div.c div.graph{
@@ -66,7 +76,7 @@ header div{
     align-items: center;
 }
 
-header a{
+a{
     font-family: 'Rubik', sans-serif;
     text-decoration: none;
     color: black;
@@ -77,40 +87,16 @@ a:hover{
     padding: 1%;
     border-radius: 5%;
     text-decoration: underline;
-    color: white;
-    background-color: var(--hover-color);
 }
 
-div#pres div {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 2px;
-    padding-right: 2px;
-    border-radius: 5px;
-    font-family: 'Quicksand', sans-serif;
-    display: flex;
-    align-items: center;
+div p{
+    padding: 2%;
 }
 
-div.gauche{
-    margin-right: 65%;
-}
-
-div.droite{
-    margin-left: 65%;
-}
-
-div#scol div{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 5px;
-}
-
-div#comp div{
-    margin-top: 10px;
-    margin-bottom: 10px;
+div div{
+    padding: 1%;
+    margin-top: 5px;
+    margin-bottom: 5px;
     margin-left: 10%;
     margin-right: 10%;
     border-radius: 5px;
@@ -130,7 +116,7 @@ p.date{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-p.sous-titre{
+p.sous-titre, div#cont div a{
     margin: 2%;
     font-size: 18px;
     font-family: 'Rubik', sans-serif;
@@ -143,6 +129,7 @@ div#comp div.c{
 }
 
 div#comp div.c div.graph{
+    padding: 0%;
     flex: 0 0 100%;
     height: 0.5em;
     margin-left: 0%;
