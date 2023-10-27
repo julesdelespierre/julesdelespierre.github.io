@@ -3,7 +3,7 @@
 
 @media (prefers-color-scheme: dark){
     body{
-        background-color: #202124;
+        background-color: var(--dark-background-color);
     }
     div div{
         background: #303134;
@@ -17,6 +17,14 @@
         color: black;
         background-color: var(--fond-texte);
     }
+
+    img#univ{
+        content: url(./img/universite-dark.jpg);
+    }
+
+    img#eic{
+        content: url(./img/EIC.png);
+    }
 }
 
 @media (prefers-color-scheme: light){
@@ -28,6 +36,29 @@
         color: white;
         background-color: var(--hover-color);
     }
+    body{
+        background-color: var(--light-background-color);
+    }
+}
+
+@media (max-width: 640px) {
+    header>div>a{
+        font-size: 12px;    
+    }
+
+    img#univ{
+        padding-top: 3%;
+        padding-right: 2%;
+        width: 128px;
+        height: auto;
+    }
+}
+
+@media (min-width: 640px) {
+    img#univ{
+        width: 256px;
+        height: auto;
+    }
 }
 
 @font-face {
@@ -37,8 +68,11 @@
 :root{
     --principal-color: #7384DE;
     --hover-color: #393A40;
-    --fond-texte: #dcdcdc;
+    --fond-texte: #D3D3D3;
+    --light-background-color: #E0E0E0;
+    --dark-background-color: #202124;
 }
+
 
 img#photo{
     display: block;
@@ -64,11 +98,14 @@ h3{
 }
 
 header{
+    position: fixed;
     border-radius: 5px;
+    width: 100%;
     background-color: var(--principal-color);
     height: 60px;
     display: flex;
     justify-content: space-evenly;
+    z-index: 999;
 }
 
 header div{
@@ -85,16 +122,19 @@ a{
 }
 
 a:hover{
-    border-radius: 10%;
+    border-radius: 5%;
     border-right-width: 60px;
     text-decoration: underline;
 }
 
 div p{
-    padding: 2%;
-    margin-left: 10%;
+    padding: 2px;
     font-family: 'Quicksand', sans-serif;
     font-size: 25px;
+}
+
+div#comp>p{
+    margin-left: 10%;
 }
 
 div div{
@@ -103,29 +143,27 @@ div div{
     margin-bottom: 5px;
     margin-left: 10%;
     margin-right: 10%;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 div#cont{
     text-align: center;
 }
-
 p.titre{
-    padding-top: 5px;
-    margin: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     font-size: 25px;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
 }
 
 p.date{
-    margin: 2%;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 p.sous-titre, div#cont div a{
-    margin: 2%;
+    padding: 2px;
     font-size: 18px;
     font-family: 'Rubik', sans-serif;
 }
@@ -134,6 +172,20 @@ ul{
     list-style: square;
     font-family: 'Quicksand', sans-serif;
 }
+
 ul>li{
     padding-top: 5px;
 }
+
+div>img{
+    display: block;
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img#eic{
+    width: 128px;
+    height: auto;
+}
+
