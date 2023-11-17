@@ -41,7 +41,7 @@
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 719px) {
     header>div>a{
         font-size: 12px;    
     }
@@ -52,13 +52,26 @@
         width: 128px;
         height: auto;
     }
+
+    header{
+        height: 80px;
+    }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 720px) {
     img#univ{
         width: 256px;
         height: auto;
     }
+
+    header{
+        height: 128px;
+    }
+
+    header>div>a{
+        font-size: 25px;
+    }
+
 }
 
 @font-face {
@@ -102,7 +115,6 @@ header{
     border-radius: 5px;
     width: 100%;
     background-color: var(--principal-color);
-    height: 60px;
     display: flex;
     justify-content: space-evenly;
     z-index: 999;
