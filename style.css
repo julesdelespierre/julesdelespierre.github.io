@@ -65,11 +65,11 @@
     }
 
     header{
-        height: 128px;
+        height: 60px;
     }
 
     header>div>a{
-        font-size: 25px;
+        font-size: 18px;
     }
 
 }
