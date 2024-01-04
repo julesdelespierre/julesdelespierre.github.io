@@ -184,7 +184,7 @@ p.date{
 
 p.sous-titre, div#cont div a{
     padding: 2px;
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -194,7 +194,7 @@ ul{
 }
 
 ul>li{
-    padding-top: 5px;
+    margin-top: 15px;
 }
 
 div>img{
@@ -207,5 +207,9 @@ div>img{
 img#eic{
     width: 128px;
     height: auto;
+}
+
+a.proj{
+    font-size: 22px;
 }
 
