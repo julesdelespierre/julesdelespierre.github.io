@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik&display=swap');
+
+
+@media (prefers-color-scheme: dark){
+    body{
+        background-color: var(--dark-background-color);
+    }
+    div div{
+        background: #303134;
+    }
+    h1, h2,  h3, p, div#cont a, ul{
+        color: white;
+        opacity: 85%;
+    }
+
+    a:hover, div#cont a:hover, a.proj:hover{
+        color: black;
+        background-color: var(--fond-texte);
+    }
+
+    header>div>a{
+        color: black;
+    }
+
+    a.proj{
+        color: white;
+    }
+
+    img#univ{
+        content: url(./img/universite-dark.jpg);
+    }
+
+    img#eic{
+        content: url(./img/EIC.png);
+    }
+
+    i{
+        color: white;
+    }
+}
+
+@media (prefers-color-scheme: light){
+    div div{
+        background: var(--fond-texte);
+    }
+
+    a:hover{
+        color: white;
+        background-color: var(--hover-color);
+    }
+    body{
+        background-color: var(--light-background-color);
+    }
+}
+
+@media (max-width: 719px) {
+    header>div>a{
+        font-size: 12px;    
+    }
+
+    img#univ{
+        padding-top: 3%;
+        padding-right: 2%;
+        width: 128px;
+        height: auto;
+    }
+
+    header{
+        height: 5%;
+    }
+}
+
+@media (min-width: 720px) {
+    img#univ{
+        width: 256px;
+        height: auto;
+    }
+
+    header{
+        height: 60px;
+    }
+
+    header>div>a{
+        font-size: 18px;
+    }
+
+}
+
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('../fonts/LEMONMILK-Regular.otf');
+}
+:root{
+    --principal-color: #7384DE;
+    --hover-color: #393A40;
+    --fond-texte: #D3D3D3;
+    --light-background-color: #E0E0E0;
+    --dark-background-color: #202124;
+}
+
+
+img#photo{
+    display: block;
+    width: 256px;
+    height: 256px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    font-family: 'Lemon Milk', sans-serif;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Lemon Milk', sans-serif;
+    margin-left: 5%;
+}
+
+h3{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+header{
+    position: fixed;
+    border-radius: 5px;
+    width: 100%;
+    background-color: var(--principal-color);
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 999;
+}
+
+header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    color: black;
+    vertical-align: middle;
+}
+
+a:hover{
+    border-radius: 5%;
+    border-right-width: 60px;
+    text-decoration: underline;
+}
+
+div p{
+    padding: 2px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+}
+
+div#comp>p, div#proj>p{
+    margin-left: 10%;
+}
+
+div div{
+    padding: 1%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 15px;
+}
+
+div#cont{
+    text-align: center;
+}
+p.titre{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+p.date{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p.sous-titre, div#cont div a{
+    padding: 2px;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+ul{
+    list-style: square;
+    font-family: 'Quicksand', sans-serif;
+}
+
+ul>li{
+    margin-top: 15px;
+}
+
+div>img{
+    display: block;
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img#eic{
+    width: 128px;
+    height: auto;
+}
+
+a.proj{
+    font-size: 22px;
+}
+
+i {
+    margin: 10%;
+    font-family: Quicksand, sans-serif;
+}
