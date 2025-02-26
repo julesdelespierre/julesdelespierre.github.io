@@ -98,6 +98,10 @@
     --dark-background-color: #202124;
 }
 
+img#agil{
+    width: auto;
+    height: 100px;
+}
 
 img#photo{
     display: block;
